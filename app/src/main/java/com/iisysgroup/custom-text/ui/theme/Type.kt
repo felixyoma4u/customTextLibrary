@@ -1,4 +1,4 @@
-package com.iisysgroup.my_dialog.ui.theme
+package com.iisysgroup.`custom-text`.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

@@ -1,4 +1,4 @@
-package com.iisysgroup.my_dialog
+package com.iisysgroup.`custom-text`
 
 import org.junit.Test
 

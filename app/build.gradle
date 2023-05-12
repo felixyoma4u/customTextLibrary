@@ -1,10 +1,11 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
 }
 
 android {
-    namespace 'com.iisysgroup.my_dialog'
+    namespace 'com.iisysgroup.custom_text'
     compileSdk 33
 
     defaultConfig {
@@ -62,4 +63,18 @@ dependencies {
     androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
+}
+
+afterEvaluate{
+    publishing{
+        publications{
+            release(MavenPublication){
+                from components.release
+
+                groupId = 'com.github.felixyoma4u'
+                artifactId = 'custom-text-compose'
+                version = '1.0'
+            }
+        }
+    }
 }

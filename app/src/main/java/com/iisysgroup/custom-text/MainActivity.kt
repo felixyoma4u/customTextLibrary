@@ -1,4 +1,4 @@
-package com.iisysgroup.my_dialog
+package com.iisysgroup.`custom-text`
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,13 +11,13 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
-import com.iisysgroup.my_dialog.ui.theme.MydialogTheme
+import com.iisysgroup.`custom-text`.ui.theme.CustomTextTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MydialogTheme {
+            CustomTextTheme {
                 @Composable
                 fun CustomText(
                     text: String,
